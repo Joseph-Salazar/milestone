@@ -75,6 +75,9 @@ public class ChoreAppService : BaseAppService, IChoreAppService
     public async Task<string> Delete(int choreId)
     {
         var choreDomain = await _postulantRepository.GetAsync(choreId);
+
+        if (choreDomain is null) throw new WarningException(MessageConst.InvalidSelection);
+
         await _postulantRepository.DeleteAsync(choreDomain);
         await UnitOfWork.SaveChangesAsync();
 

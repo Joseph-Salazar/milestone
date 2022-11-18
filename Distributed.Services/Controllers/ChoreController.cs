@@ -64,7 +64,7 @@ public class ChoreController
     [HttpDelete(nameof(Delete))]
     [ProducesResponseType(typeof(JsonResult<string>), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(JsonResult<string>), StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> Delete([FromBody] int choreId)
+    public async Task<IActionResult> Delete( int choreId)
     {
         var response = await _postulantAppService.Delete(choreId);
         return new OkObjectResult(new JsonResult<string>(response));
