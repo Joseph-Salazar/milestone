@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Distributed.Services</name>
+    </assembly>
+    <members>
+        <member name="M:Distributed.Services.Controllers.ChoreController.GetById(System.Int32)">
+            <summary>
+            Permite obtener una tarea por id
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.ChoreController.Add(Application.Dto.Chore.ChoreDto)">
+            <summary>
+            Permite agregar una tarea
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.ChoreController.Update(Application.Dto.Chore.UpdateChoreDto)">
+            <summary>
+            Permite actualizar una tarea
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.ChoreController.Delete(System.Int32)">
+            <summary>
+            Permite borrar una tarea
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.PostulantController.RegisterUser(Application.Dto.Postulant.RegisterPostulantDto)">
+            <summary>
+            Permite registrar un usuario
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.PostulantController.LoginUser(Application.Dto.Postulant.LoginPostulantDto)">
+            <summary>
+            Permite a un usuario ingresar al sistema
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.PostulantController.GetById(System.Int32)">
+            <summary>
+            Permite obtener un usuario por id
+            </summary>
+        </member>
+        <member name="M:Distributed.Services.Controllers.PostulantController.Update(Application.Dto.Postulant.UpdatePostulantDto)">
+            <summary>
+            Permite actualizar un usuario
+            </summary>
+        </member>
+    </members>
+</doc>
